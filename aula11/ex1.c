@@ -14,8 +14,8 @@ float multi (float N1, float N2){
     return N1 * N2;
 }
 
-float div (float N1, float N2){
-    return N1/N2;
+float divi (float N1, float N2){
+    return N1 / N2;
 }
 
 int main(){
@@ -24,7 +24,7 @@ int main(){
     float N1, N2, res;
 
     printf("---- Calculadora Simples ----\n");
-    printf("-----------------------------");
+    printf("-----------------------------\n");
     printf("Primeiro valor: ");
     scanf ("%f", &N1);
     printf("Segundo valor: ");
@@ -33,7 +33,8 @@ int main(){
     printf("1- Somar \n");
     printf("2- Subtrair \n");
     printf("3- Multiplicar \n");
-    printf("4- Dividir \n\n");
+    printf("4- Dividir \n");
+    printf("-----------------------------\n");
     printf("Faca sua escolha: ");
     scanf ("%d", &op);
         switch (op){
@@ -48,13 +49,13 @@ int main(){
             break;
         case 4:
             if (N2 == 0){
-                printf("Nao eh possivel dividir por 0");
+                printf("Nao eh possivel dividir por 0\n");
             }else{
-                res = div(N1, N2);
+                res = divi(N1, N2);
             }
             break;
         default:
-            printf("Opção invalida!!");
+            printf("Opcao invalida!!\n");
             break; 
         }
     printf("-----------------------------\n");
